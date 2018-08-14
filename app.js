@@ -10,6 +10,7 @@ const path = require('path');
 
 app.use(static('./build'));
 
+// change this regexp for your path
 router.get(/[ablum|book|me|scene|notice|rent|about|ablum]/, async (ctx) => {
   await send(ctx, 'index.html', { root: __dirname + '/build' });
 });
