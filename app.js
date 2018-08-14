@@ -16,4 +16,8 @@ router.get(/[ablum|book|me|scene|notice|rent|about|ablum]/, async (ctx) => {
 
 app.use(router.routes()).use(router.allowedMethods());
 
-app.listen(3000);
+const port = 3001;
+
+app.listen(port);
+
+console.log(`Server start at port ${port}`);
