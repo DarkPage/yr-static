@@ -2,11 +2,15 @@ const Koa = require('koa');
 const static = require('koa-static');
 const Router = require('koa-router');
 const send = require('koa-send');
+const gzip = require('koa-gzip');
 
 const app = new Koa();
+
 const router = new Router();
 
 const path = require('path');
+
+app.use(gzip());
 
 app.use(static('./build'));
 
