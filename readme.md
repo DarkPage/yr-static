@@ -1,4 +1,4 @@
-# Serve your static file easyly. Simple SSR.
+# Serve your static file easily. Simple SSR.
 
 ## Base on koa koa-router koa-static koa-send. Simple to serve your static files.
 
