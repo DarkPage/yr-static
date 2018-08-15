@@ -21,7 +21,7 @@ router.get(/[ablum|book|me|scene|notice|rent|about|ablum]/, async (ctx) => {
 
 app.use(router.routes()).use(router.allowedMethods());
 
-const port = 8888;
+const port = 3000;
 
 app.listen(port, '0.0.0.0');
 
