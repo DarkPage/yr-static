@@ -1,3 +1,4 @@
+# 基础镜像
 FROM docker.io/node
 
 COPY ./ /root/project
