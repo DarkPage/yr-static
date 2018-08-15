@@ -1,7 +1,8 @@
 # 基础镜像
-FROM docker.io/node
+# FROM docker.io/node
+FROM base/yr-static:v1
 
-COPY ./ /root/project
+COPY ./build /root/project
 
 WORKDIR /root/project
 
